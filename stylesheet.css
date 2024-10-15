@@ -1,0 +1,176 @@
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o padding padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e borda nas dimensões dos elementos */
+    font-family: Courier, monospace; /* Define a fonte padrão */
+    color: white; /* Define a cor do texto padrão */
+}
+
+html {
+    scroll-behavior: smooth; /* Habilita rolagem suave ao navegar entre as âncoras */
+}
+
+body {
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o padding padrão do body */
+    background-image: url('./bg3.gif'); /* Define a imagem de fundo */
+    background-size: cover; /* Garante que a imagem cubra todo o background */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita repetição da imagem de fundo */
+    min-height: 100vh; /* Faz com que o body ocupe toda a altura da janela */
+}
+
+/* Transparência com overlay */
+.overlay {
+    position: fixed; /* Mantém o overlay fixo na tela */
+    top: 0; /* Posiciona no topo */
+    left: 0; /* Posiciona à esquerda */
+    width: 100%; /* Largura total da tela */
+    height: 100%; /* Altura total da tela */
+    background-color: rgba(2, 2, 2, 0.5); /* Fundo com 50% de transparência */
+    z-index: 1; /* Coloca acima da imagem de fundo */
+}
+
+header {
+    background: #000; /* Fundo preto para o cabeçalho */
+    padding: 15px 20px; /* Espaçamento interno do cabeçalho */
+    color: white; /* Cor do texto no cabeçalho */
+    width: 100%; /* Largura total do cabeçalho */
+    z-index: 1000; /* Coloca acima de outros elementos */
+}
+
+.header-flex {
+    display: flex; /* Exibe os itens como flexível */
+    justify-content: space-around; /* Espaça os itens uniformemente */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o cabeçalho */
+}
+
+nav ul li {
+    list-style: none; /* Remove os marcadores da lista */
+    z-index: 1000; /* Coloca acima de outros elementos */
+    display: flex; /* Exibe os itens da lista em linha */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white; /* Cor do texto dos links */
+}
+
+/* Conteúdo da página */
+.content {
+    position: relative; /* Permite posicionamento relativo dentro do contexto */
+    z-index: 2; /* Coloca o conteúdo acima da transparência */
+    text-align: center; /* Centraliza o texto */
+    padding-top: 100px; /* Espaçamento superior */
+    color: white; /* Cor do texto */
+}
+
+.content h1 {
+    margin-bottom: 10px; /* Espaçamento inferior do título */
+}
+
+.content p {
+    margin-bottom: 150px; /* Espaçamento inferior do parágrafo */
+}
+
+.music-player {
+    position: relative; /* Permite posicionamento relativo */
+    text-align: center; /* Centraliza o player de música */
+    z-index: 1000; /* Coloca acima de outros elementos */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+.social nav ul {
+    display: flex; /* Exibe os itens como flexível */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+    justify-content: center; /* Centraliza os itens */
+}
+
+.social nav ul li {
+    list-style: none; /* Remove os marcadores da lista */
+    margin: 0 40px; /* Espaçamento entre os ícones */
+    margin-top: 100px; /* Espaçamento superior dos ícones */
+    margin-bottom: 300px; /* Espaçamento inferior dos ícones */
+}
+
+.headercontent {
+    display: flex; /* Exibe os itens como flexível */
+    flex-direction: column; /* Alinha as seções em coluna */
+    align-items: center; /* Centraliza as seções horizontalmente */
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    margin-bottom: 100px; /* Espaçamento inferior geral */
+}
+
+#about {
+    width: 800px; /* Largura fixa da seção "About" */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-bottom: 60px; /* Espaçamento inferior da seção "About" */
+    z-index: 1000; /* Coloca acima de outros elementos */
+
+}
+
+#contact {
+    width: 800px; /* Largura fixa da seção "Contact" */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-top: 60px; /* Adiciona espaçamento superior da seção "Contact" */
+    z-index: 1000; /* Coloca acima de outros elementos */
+
+}
+
+#form-section {
+    width: 300px; /* Largura do formulário */
+    text-align: left; /* Alinha o texto dentro do formulário à esquerda */
+    margin-top: 30px; /* Espaçamento superior entre seções */
+    margin-bottom: 50px; /* Espaçamento inferior do formulário */
+    background-color: rgba(11, 11, 11, 0.7); /* Fundo semi-transparente */
+    padding: 20px; /* Preenchimento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para efeito de profundidade */
+    z-index: 1000; /* Coloca acima de outros elementos */
+}
+
+form {
+    display: flex; /* Exibe como flexível */
+    flex-direction: column; /* Alinha os campos em coluna */
+}
+
+label {
+    margin-bottom: 5px; /* Espaçamento inferior dos rótulos */
+    font-weight: bold; /* Rótulos em negrito */
+    
+}
+
+input, 
+textarea {
+    margin-bottom: 15px; /* Espaçamento inferior dos campos */
+    padding: 10px; /* Preenchimento interno */
+    border: 1px solid #ccc; /* Borda dos campos */
+    border-radius: 4px; /* Bordas arredondadas */
+    background-color: #fff; /* Cor de fundo branca */
+    color: #333; /* Cor do texto */
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007BFF; /* Cor da borda ao focar */
+    outline: none; /* Remove a borda padrão de foco */
+}
+
+button {
+    padding: 10px; /* Preenchimento interno do botão */
+    background-color: #363636; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+}
+
+button:hover {
+    background-color: #72103e; /* Cor de fundo do botão ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave de cor */
+}

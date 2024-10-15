@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feyre_head</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+    <script src="./script.js" defer></script> <!-- Defer script loading until after HTML parsing -->
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <nav>
+                <ul class="header-flex">
+                    <!-- Navigation links with corresponding sections -->
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="overlay"></div> <!-- Overlay for visual effects -->
+
+    <div class="content">
+        <h1>Feyre.</h1>
+        <p>Fullstack Python Developer</p>
+    </div>
+
+    <!-- Music player section -->
+    <div class="music-player">
+        <audio controls autoplay>
+            <source src="./music/dreamin.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio. <!-- Fallback message for unsupported browsers -->
+        </audio>
+    </div>
+
+    <div class="social">
+        <nav>
+            <ul>
+                <!-- Social media links with icons -->
+                <li>
+                    <a href="https://github.com/Feyre-head" target="_blank" rel="noopener">
+                        <img src="./icons/github.png" alt="Github logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/feyre_head" target="_blank" rel="noopener">
+                        <img src="./icons/instagram.png" alt="Instagram logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://discord.gg/WBH9JDYw" target="_blank" rel="noopener">
+                        <img src="./icons/discord.png" alt="Discord logo">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- About me and contact sections -->
+    <div class="headercontent">
+        <div id="about">
+            <h3>About Me</h3>
+            <p>Hello! My name is Inara, and I'm a 24-year-old beginner Full Stack Python student at EBAC. I'm passionate
+                about games and technology. I've played various MOBAs like League of Legends and first-person shooters
+                (FPS). Currently, I've put gaming on hold to focus on my studies. However, I still find time to enjoy VR
+                Chat in my spare moments, and I'm a proud owner of a Meta Quest 3.</p>
+        </div>
+
+        <div id="contact">
+            <h3>Contact</h3>
+            <a href="mailto:inaraoenning@gmail.com">E-mail</a> <!-- Email link -->
+            <address>Geneva 14456 NY US</address> <!-- Address information -->
+        </div>
+            <div id="form-section">
+                <form action="" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send</button>
+            </div>
+    </div>
+</body>
+
+</html>
