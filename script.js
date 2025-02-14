@@ -2,4 +2,4 @@
 const audioElement = document.getElementById('music-player');
 
 // Definir o volume inicial (por exemplo, 50%)
-audioElement.volume = 0.05; // Volume vai de 0.0 a 1.0
+audioElement.volume = 0.5; // Volume vai de 0.0 a 1.0

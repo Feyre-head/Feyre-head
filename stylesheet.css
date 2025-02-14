@@ -35,7 +35,7 @@ header {
     background: #000; /* Fundo preto para o cabeçalho */
     padding: 15px 20px; /* Espaçamento interno do cabeçalho */
     color: white; /* Cor do texto no cabeçalho */
-    width: 100%; /* Largura total do cabeçalho */
+    width: 100vw; /* Largura total do cabeçalho */
     z-index: 1000; /* Coloca acima de outros elementos */
 }
 
